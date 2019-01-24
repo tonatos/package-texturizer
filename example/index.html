@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Пример использования текстурайзера для коробок</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script src="../dist/package-texturizer.js"></script>
+    </head>
+    <body>
+        <div
+            class="package-container" 
+            data-package 
+            data-package-image="./package-texture-1.png"
+            data-package-width="150" 
+            data-package-height="200">
+        </div>
+
+        <div
+            class="package-container" 
+            data-package 
+            data-package-image="./package-texture-1.png"
+            data-package-width="400" 
+            data-package-height="500">
+        </div>
+
+        <div
+            class="package-container" 
+            data-package 
+            data-package-image="./package-texture-1.png"
+            data-package-width="800" 
+            data-package-height="1000">
+        </div>
+
+        <div
+            id="custom-element"
+            class="package-container" 
+            data-package-image="./package-texture-1.png"
+            data-package-width="800" 
+            data-package-height="1000">
+        </div>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', () => {
+                PackageTexturizer.texturize( document.getElementById('custom-element') );
+            });
+        </script>
+    </body>
+</html>
