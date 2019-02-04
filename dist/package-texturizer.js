@@ -59,52 +59,52 @@ var PackageTexturizer = function () {
     }
   };
   var sizes = {
-    shiftConstance: 70,
+    shiftConstance: 270,
     texture: {
-      width: 2000,
-      height: 1005
+      width: 1995,
+      height: 2332
     },
     package: {
-      width: 453,
-      height: 687,
-      thickness: 140
+      width: 1459,
+      height: 2332,
+      thickness: 538
     },
     offset: {
-      back: {
-        x: 126,
-        y: 184,
-        width: 453,
-        height: 687
+      front: {
+        x: 0,
+        y: 0,
+        width: 1459,
+        height: 2332
       },
       left: {
-        x: 541,
-        y: 184,
-        width: 140,
-        height: 687
+        x: 1456,
+        y: 0,
+        width: 538,
+        height: 2332
       },
-      front: {
-        x: 681,
-        y: 184,
-        width: 453,
-        height: 687
+      back: {
+        x: 0,
+        y: 0,
+        width: 0,
+        height: 0
       },
       right: {
-        x: 1135,
-        y: 184,
-        width: 140,
-        height: 687
+        x: 0,
+        y: 0,
+        width: 0,
+        height: 0
       },
       top: {
-        x: 1451,
-        y: 199,
-        width: 453,
-        height: 140
+        x: 0,
+        y: 0,
+        width: 0,
+        height: 0
       },
       bottom: {
-        x: 1451,
-        y: 332,
-        width: 453,
-        height: 140
+        x: 0,
+        y: 0,
+        width: 1459,
+        height: 538
       }
     }
   };
@@ -124,7 +124,7 @@ var PackageTexturizer = function () {
         position: 'relative',
         width: sizes.package.width + "px",
         height: sizes.package.height + "px",
-        transform: 'perspective(1500px) rotateX(0deg) rotateY(-30deg) translateY(40px) translateX(50px) translateZ(-50px)',
+        transform: 'perspective(3000px) rotateX(0deg) rotateY(-40deg) translateY(0px) translateX(-500px) translateZ(-800px)',
         transformStyle: 'preserve-3d'
       }
     },
@@ -174,7 +174,7 @@ var PackageTexturizer = function () {
         height: sizes.offset.bottom.height + "px",
         transform: "rotateX(-90deg) translate3d(0, 0, " + (sizes.package.height - sizes.shiftConstance) + "px)",
         backgroundPosition: "-" + sizes.offset.bottom.x + "px -" + sizes.offset.bottom.y + "px",
-        boxShadow: "0px 0px 50px #000"
+        boxShadow: "0px 0px 150px #000"
       }
     },
     left: {
